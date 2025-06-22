@@ -1,5 +1,5 @@
 
-````markdown
+
 # IoT-Based Intrusion Detection System
 
 This project implements an Internet of Things (IoT) infrastructure using the MQTT (Message Queuing Telemetry Transport) protocol to simulate device communication and detect potential security threats through a lightweight Intrusion Detection System (IDS). The system is built using Python and focuses on simulating traffic from IoT devices, generating normal and anomalous data, and detecting threats in real time.
