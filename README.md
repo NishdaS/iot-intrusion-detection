@@ -6,7 +6,13 @@ This project implements an Internet of Things (IoT) infrastructure using the MQT
 
 ## Project Overview
 
-With the rapid expansion of IoT ecosystems, security has become a critical concern. This system aims to simulate a smart environment with multiple MQTT-connected devices and introduces an IDS that monitors traffic patterns for anomalies and potential threats.
+The system includes multiple Python-based IoT device simulations communicating over an MQTT broker hosted on Swinburne's infrastructure. It includes:
+- Devices that publish sensor data
+- Devices that subscribe to and process messages
+- A hybrid device that publishes and subscribes
+- A Python-based user interface to monitor devices and send commands
+- A basic Intrusion Detection System (IDS) that flags anomalies in traffic
+- A detailed cybersecurity report analysing MQTT vulnerabilities
 
 ## Key Features
 
@@ -30,22 +36,9 @@ With the rapid expansion of IoT ecosystems, security has become a critical conce
 - **Programming Language**: Python
 - **Protocol**: MQTT (using `paho-mqtt`)
 - **Libraries**: `scapy`, `paho-mqtt`, `threading`, `random`, `time`
+- **Command-Line Interface (CLI)** & Python-based UI
 
-## Project Structure
-
-```bash
-iot-intrusion-detection/
-│
-├── devices/                 # Simulated device scripts (DeviceA.py, DeviceB.py...)
-├── broker/                 # MQTT broker configuration (can use public/local broker)
-├── ids/                    # Intrusion detection logic
-│   └── anomaly_detector.py
-├── logs/                   # Traffic logs and alerts
-├── README.md               # Project overview
-└── requirements.txt        # Python dependencies
-````
-
-## ⚙️ Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 
@@ -54,13 +47,7 @@ git clone https://github.com/YourUsername/iot-intrusion-detection.git
 cd iot-intrusion-detection
 ```
 
-### 2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Run the MQTT Broker
+### 2. Run the MQTT Broker
 
 You can use a local broker (e.g., Mosquitto) or connect to a public test broker like:
 
@@ -68,7 +55,7 @@ You can use a local broker (e.g., Mosquitto) or connect to a public test broker 
 test.mosquitto.org
 ```
 
-### 4. Simulate Devices
+### 3. Simulate Devices
 
 ```bash
 python devices/DeviceA.py
@@ -76,7 +63,7 @@ python devices/DeviceB.py
 ...
 ```
 
-### 5. Start Intrusion Detection
+### 4. Start Intrusion Detection
 
 ```bash
 python ids/anomaly_detector.py
@@ -101,3 +88,6 @@ python ids/anomaly_detector.py
 * MQTT (2024). Official Specification and Use Cases
 
 ---
+Author
+Fathima Nishda Mohomed Semsar
+School of Science, Computing and Emerging Technologies
