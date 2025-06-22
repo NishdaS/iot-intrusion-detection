@@ -88,6 +88,6 @@ python ids/anomaly_detector.py
 * MQTT (2024). Official Specification and Use Cases
 
 ---
-Author
-Fathima Nishda Mohomed Semsar
-School of Science, Computing and Emerging Technologies
+## Author
+* Fathima Nishda Mohomed Semsar
+* School of Science, Computing and Emerging Technologies
